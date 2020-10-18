@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Liverpool Players</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Name:</label>
+          <input type="name" id="name" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="Value" class="primary">Value</label>
+          <input type="text" id="value" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="position" class="primary">Position</label>
+          <select id="position">
+            <option value="" disabled selected></option>
+            <option value="gk">GK</option>
+            <option value="defender">Central Defender</option>
+            <option value="fullback">Fullback</option>
+            <option value="midfielder">Midfielder</option>
+            <option value="attacker">Attacker</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <h1>Liverpool Squad</h1>
+    <ul id="player-list"></ul>
+  </body>
+</html>
